@@ -1,0 +1,15 @@
+---
+application:
+  name: "music-bot"
+  project: "musicplayer"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "musicplayer"
+  version: "4.4"
+routers:
+- name: "main-music-bot"
+  routes:
+  - application_name: "music-bot"
+    paths:
+    - "/*"
